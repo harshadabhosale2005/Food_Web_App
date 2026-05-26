@@ -1,0 +1,108 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  
+background:url('Images/food\ bg\ img2.avif')no-repeat;
+ background-size: cover;
+ background-position: center;}
+
+.act{
+  width: 390px;
+  background:black;
+  color:white;
+  border-radius: 12px;
+  padding: 35px 10px;
+
+  
+}
+
+  
+
+.act h1{
+  font-size: 40px;
+  text-align: center;
+  
+}
+
+.act .input-box{
+  width: 100%;
+  height: 30px;         
+  
+  margin: 70px 0;
+}
+
+.input-box input{
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border: 2px solid grey;
+  border-radius: 10px;
+  font-size: 18px;
+ color: black;
+  padding: 20px 45px 20px 20px;
+  
+  
+  
+
+}
+.input-box input::placeholder{
+  color:gray;
+}
+
+.act .remebre-forgot{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 20px;
+
+}
+
+.remebre-forgot a{
+  color: white;
+  text-decoration: none;
+}
+
+.remebre-forgot a:hover{
+  text-decoration: underline;
+
+}
+
+.act .btn{
+  width: 100%;
+  height: 45px;
+  background: #ee0f0f;
+  border: none;
+  outline: none;
+  border-radius: 48px;
+  box-shadow: 40px;
+  cursor:pointer;
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+}
+
+.act .register-link{
+  font-size: 14.5px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: -10px;
+}
+
+.register-link p a{
+  color:rgb(241, 240, 240);
+  text-decoration: none;
+  font-weight: 600;
+  
+  
+
+}
+
+.register-link p a:hover{
+  text-decoration:underline;
+
+}
+  
+  

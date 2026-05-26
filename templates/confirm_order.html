@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirm Order</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static',
+    filename='order_style.css') }}">
+
+</head>
+
+<body>
+
+<div class="confirm-box">
+
+    <h1>Confirm Your Order</h1>
+
+    <form action="/delivery" method="POST">
+
+        <label>Selected Item:</label>
+
+        <input type="text"
+        name="food"
+        value="{{ food }}"
+        readonly>
+
+        <br><br>
+
+        <label>Total Price:</label>
+
+        <input type="text"
+        name="price"
+        value="{{ price }}"
+        readonly>
+
+        <br><br>
+
+        <label>Quantity:</label>
+
+        <input type="number"
+        name="quantity"
+        value="1"
+        min="1"
+        required>
+
+        <br><br>
+
+        <button type="submit">
+            Confirm Order
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

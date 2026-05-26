@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Order Now</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='order now.css') }}">
+
+</head>
+
+<body>
+
+<div class="order">
+
+    <h1><span>Order</span> Now</h1>
+
+    <div class="order_main">
+
+        <div class="order_image">
+
+            <img src="{{ url_for('static', filename='Images/order images2.jpeg') }}">
+
+        </div>
+
+        <form action="/order" method="POST">
+
+            <div class="input">
+
+                <p>Name</p>
+
+                <input
+                type="text"
+                name="name"
+                placeholder="Your name"
+                required>
+
+            </div>
+
+            <div class="input">
+
+                <p>Email</p>
+
+                <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required>
+
+            </div>
+
+            <div class="input">
+
+                <p>Number</p>
+
+                <input
+                type="text"
+                name="number"
+                placeholder="Your number"
+                required>
+
+            </div>
+
+            <div class="input">
+
+                <p>How Much</p>
+
+                <input
+                type="text"
+                name="quantity"
+                placeholder="How Much Order"
+                required>
+
+            </div>
+
+            <div class="input">
+
+                <p>Your Order</p>
+
+                <input
+                type="text"
+                name="food"
+                placeholder="Your Order"
+                required>
+
+            </div>
+
+            <div class="input">
+
+                <p>Address</p>
+
+                <input
+                type="text"
+                name="address"
+                placeholder="Address"
+                required>
+
+            </div>
+
+            <button type="submit"
+            class="order_btn">
+
+                Order Now
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

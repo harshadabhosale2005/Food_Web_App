@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+
+<body>
+    <div id="top"></div>
+    <nav>
+        <h1>FOODIE</h1>
+        <ul>
+            <a href="/">
+                <li>Home</li>
+            </a>
+            
+            <a href="/menu">
+                <li>Menu</li>
+            </a>
+           <a href="#contact">
+                <li>Contact</li>
+            </a>
+        </ul>
+        
+        <div class="btn">
+
+{% if 'username' in session %}
+
+    <a href="/logout">
+        <button>LOGOUT</button>
+    </a>
+
+{% else %}
+
+    <a href="/login">
+        <button>LOGIN</button>
+    </a>
+
+{% endif %}
+
+</div>
+
+    </nav>
+
+
+
+    <div class="main-div">
+        <div class="head">
+            <h1>Stay Healthy</h1>
+            <h2>Eat Healthy</h2>
+            <a href="/order">
+    <button>Order Now</button>
+</a>
+        </div>
+
+
+
+        <div class="img">
+            <img src="{{ url_for('static', filename='Images/food plate5.avif') }}">
+           
+        </div>
+
+    </div>
+
+
+
+    <!--OUR MENU-->
+
+    <div class="menu">
+        <h1>Our<span>Menu</span></h1>
+
+        <div class="menu_box">
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="{{ url_for('static', filename='Images/chinese.jpg') }}">
+                </div>
+
+                <div class="menu_info">
+                    <h2>CHINESE</h2>
+                    <h3>Rs.80 <strike>90</strike></h3>
+                    <a href="/buy/Chinese/80" class="menu_btn">Order Now</a>
+                </div>
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="{{ url_for('static', filename='Images/tomato pasta.jpeg') }}">
+                </div>
+
+                <div class="menu_info">
+                    <h2>Tomato Pasta</h2>
+                    <h3>Rs.60 <strike>80</strike></h3>
+                    <a href="/buy/Tomato Pasta/60" class="menu_btn">Order Now</a>
+                </div>
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="{{ url_for('static', filename='Images/idli breakefast 1.jpg') }}">
+                </div>
+
+                <div class="menu_info">
+                    <h2>Idli</h2>
+                    <h3>Rs.20 <strike>30</strike></h3>
+                   <a href="/buy/Idli/20" class="menu_btn">Order Now</a>
+                </div>
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="{{ url_for('static', filename='Images/hot dog.jpg') }}">
+                </div>
+
+                <div class="menu_info">
+                    <h2>Hot Dog</h2>
+                    <h3>Rs.40 <strike>50</strike></h3>
+                    <a href="/buy/Hot Dog/40" class="menu_btn">Order Now</a>
+                </div>
+            </div>
+
+
+
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="{{ url_for('static', filename='Images/pulav dinner.jpeg') }}">
+                </div>
+
+                <div class="menu_info">
+                    <h2>Pulav</h2>
+                    <h3>Rs.110 <strike>130</strike></h3>
+                    <a href="/buy/Pulav/110" class="menu_btn">Order Now</a>
+                </div>
+            </div>
+
+
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="{{ url_for('static', filename='Images/panir1.jpeg') }}">
+                </div>
+
+                <div class="menu_info">
+                    <h2>Panir</h2>
+                    <h3>Rs.60 <strike>80</strike></h3>
+                    <a href="/buy/Panir/60" class="menu_btn">Order Now</a>
+                </div>
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="{{ url_for('static', filename='Images/dosa breckfast.jpeg') }}">
+                </div>
+
+                <div class="menu_info">
+                    <h2>Dosa</h2>
+                    <h3>Rs.35 <strike>40</strike></h3>
+                    <a href="/buy/Dosa/35" class="menu_btn">Order Now</a>
+                </div>
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="{{ url_for('static', filename='Images/pizza dinner.jpg') }}">
+                </div>
+
+                <div class="menu_info">
+                    <h2>Pizza</h2>
+                    <h3>Rs.110 <strike>130</strike></h3>
+                    <a href="/buy/Pizza/110" class="menu_btn">Order Now</a>
+                </div>
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="{{ url_for('static', filename='Images/upma breakfast 1.jpg') }}">
+                </div>
+
+                <div class="menu_info">
+                    <h2>Upma</h2>
+                    <h3>Rs.15 <strike>25</strike></h3>
+                    <a href="/buy/Upma/15" class="menu_btn">Order Now</a>
+                </div>
+            </div>
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="{{ url_for('static', filename='Images/pohe Breakfast 3.jpg') }}">
+                </div>
+
+                <div class="menu_info">
+                    <h2>Pohe</h2>
+                    <h3>Rs.20 <strike>30</strike></h3>
+                    <a href="/buy/Pohe/20" class="menu_btn">Order Now</a>
+                </div>
+            </div>
+
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="{{ url_for('static', filename='Images/momos.jpg') }}">
+                    
+                </div>
+
+                <div class="menu_info">
+                    <h2>Momos</h2>
+                    <h3>Rs.80 <strike>90</strike></h3>
+                    <a href="/buy/Momos/80" class="menu_btn">Order Now</a>
+                </div>
+            </div>
+
+
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    
+                    <img src="{{ url_for('static', filename='Images/veg biryani dinner.jpeg') }}">
+                </div>
+
+                <div class="menu_info">
+                    <h2>Biryani</h2>
+                    <h3>Rs.80 <strike>100</strike></h3>
+                    <a href="/buy/Biryani/80" class="menu_btn">Order Now</a>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+
+
+
+<div class="act">
+
+    <form action="/feedback" method="POST">
+
+        <h1>Give<span>Feedback</span></h1>
+        
+
+        <div class="input-box">
+
+            <textarea
+            name="message"
+            placeholder="Enter your feedback"
+            required></textarea>
+
+        </div>
+
+        <button type="submit" class="btn">
+            Submit Feedback
+        </button>
+
+    </form>
+
+</div>
+
+    <footer class="footer" id="contact">
+
+    <div class="footer-content">
+
+        <h1>FOODIE</h1>
+
+        <h4>Delicious Food For Everyone🍔</h4>
+
+        <p>📞 +91 9876543210</p>
+
+        <p>📧 foodie@gmail.com</p>
+
+        <p>📍 Pune, Maharashtra</p>
+
+    </div>
+
+</footer>
+
+
+
+
+
+
+
+    <a href="#top" class="arrow">
+   <img src="{{ url_for('static', filename='Images/Arrow 1.png') }}"
+   width="50">
+</a>
+
+<div id="top"></div>
+    
+
+
+
+
+</body>
+
+</html>

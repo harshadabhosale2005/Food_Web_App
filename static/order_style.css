@@ -1,0 +1,307 @@
+body{
+
+    margin: 0;
+
+    padding: 0;
+
+    background: black;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+/* CONFIRM ORDER PAGE */
+
+.confirm-box{
+
+    width: 500px;
+
+    background: rgb(48, 47, 47);
+
+    color: white;
+
+    margin: 80px auto;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 0px 15px red;
+
+}
+
+.confirm-box h1{
+
+    text-align: center;
+
+    color: red;
+
+    margin-bottom: 35px;
+
+    font-size: 40px;
+
+}
+
+.confirm-box label{
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+}
+
+.confirm-box input{
+
+    width: 100%;
+
+    height: 50px;
+
+    margin-top: 15px;
+
+    margin-bottom: 25px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 10px;
+
+    padding-left: 15px;
+
+    font-size: 18px;
+
+    background: white;
+
+}
+
+.confirm-box button{
+
+    width: 100%;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: red;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.confirm-box button:hover{
+
+    background: darkred;
+
+}
+
+
+
+/* DELIVERY PAGE */
+
+.delivery-box{
+
+    width: 600px;
+
+    background: rgb(48, 47, 47);
+
+    color: white;
+
+    margin: 50px auto;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 0px 15px red;
+
+}
+
+.delivery-box h1{
+
+    text-align: center;
+
+    color: red;
+
+    margin-bottom: 35px;
+
+    font-size: 40px;
+
+}
+
+.delivery-box label{
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+}
+
+.delivery-box input{
+
+    width: 100%;
+
+    height: 50px;
+
+    margin-top: 10px;
+
+    margin-bottom: 20px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 10px;
+
+    padding-left: 15px;
+
+    font-size: 17px;
+
+}
+
+.delivery-box textarea{
+
+    width: 100%;
+
+    height: 130px;
+
+    margin-top: 10px;
+
+    margin-bottom: 20px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    font-size: 17px;
+
+    resize: none;
+
+}
+
+.delivery-box select{
+
+    width: 100%;
+
+    height: 50px;
+
+    margin-top: 10px;
+
+    margin-bottom: 25px;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 10px;
+
+    padding-left: 15px;
+
+    font-size: 17px;
+
+}
+
+.delivery-box button{
+
+    width: 100%;
+
+    height: 50px;
+
+    background: red;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 30px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.delivery-box button:hover{
+
+    background: darkred;
+
+}
+
+
+
+/* QR SCANNER */
+
+#scanner{
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+}
+
+#scanner img{
+
+    border-radius: 15px;
+
+    border: 3px solid white;
+
+}
+
+
+
+/* SUCCESS MESSAGE */
+
+.success-box{
+
+    width: 500px;
+
+    background: rgb(48, 47, 47);
+
+    color: white;
+
+    margin: 180px auto;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0px 0px 15px green;
+
+}
+
+.success-box h1{
+
+    color: lime;
+
+    font-size: 45px;
+
+}
+
+.success-box h2{
+
+    margin-top: 20px;
+
+    font-size: 25px;
+
+}

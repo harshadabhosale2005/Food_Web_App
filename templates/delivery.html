@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delivery Information</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='order_style.css') }}">
+</head>
+<body>
+
+<div class="delivery-box">
+
+<h1>Your Delivery Details</h1>
+<p>
+
+Selected Item:
+<b>{{ food }}</b>
+
+</p>
+
+<p>
+
+Price:
+<b>₹{{ price }}</b>
+
+</p>
+
+<p>
+
+Quantity:
+<b>{{ quantity }}</b>
+
+</p>
+
+<form action="/place_order" method="POST">
+
+<input type="hidden"
+name="food"
+value="{{ food }}">
+
+<input type="hidden"
+name="price"
+value="{{ price }}">
+
+<label>Your Name:</label>
+
+<input type="text"
+name="customer_name"
+required>
+
+<label>Mobile Number:</label>
+
+<input type="text"
+name="mobile"
+required>
+
+<label>Delivery Address:</label>
+
+<textarea
+name="address"
+required></textarea>
+
+<label>Payment Method:</label>
+
+<select
+name="payment"
+id="payment"
+onchange="showScanner()">
+<option>Cash on Delivery</option>
+<option>Online</option>
+
+</select>
+
+<input type="hidden"
+name="food"
+value="{{ food }}">
+
+<input type="hidden"
+name="price"
+value="{{ price }}">
+
+<div id="scanner" style="display:none;">
+
+<img src="{{ url_for('static',
+filename='Images/scanner.png') }}"
+width="250">
+
+</div>
+<input type="hidden"
+name="quantity"
+value="{{ request.form['quantity'] }}">
+
+<button type="submit">
+Place Order
+</button>
+
+</form>
+
+</div>
+<script>
+
+function showScanner(){
+
+    var payment =
+    document.getElementById("payment").value;
+
+    var scanner =
+    document.getElementById("scanner");
+
+    if(payment == "Online"){
+
+        scanner.style.display = "block";
+
+    }
+
+    else{
+
+        scanner.style.display = "none";
+
+    }
+
+}
+
+</script>
+</body>
+</html>
